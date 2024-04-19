@@ -1,0 +1,3 @@
+function letra() {
+    history.back
+}

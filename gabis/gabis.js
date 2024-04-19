@@ -22,9 +22,9 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   }
 
 function tanks() {
-alert("Eu também te amo e aceito casar com vc! :)")
+alert("Eu também te amo e aceito casar com vc! :)");
 }  
 
 function not() {
-alert("Você nem ta maluca de não aceitar, volte lá e clique no sim! :/")
+alert("Você ta maluca de não aceitar, sua doente, volta agora lá e clica no sim! ");
 } 

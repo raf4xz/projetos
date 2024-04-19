@@ -1,68 +1,30 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: rgb(241, 23, 23);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    header {
-    position: fixed;
-    top: 0;
-    padding: 5px;
-    align-items: center;
-    text-align: center;
-    background: #121212;
-    color: white;
-    width: 50%;
-    font-size: 1rem;
-    font-weight: bold;
-    }
-    
-    .yes-or-no {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    }
-    
-    .yes-or-no .yes {
-    font-weight: bold;
-    margin-right: 5px;
-    background: rgb(132, 207, 132);
-    color: white;
-    font-size: 1rem;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 5px;
-    text-transform: uppercase;
-    }
-    
-    .yes-or-no .no {
-    margin-left: 5px;
-    font-weight: bold;
-    background: rgb(216, 106, 106);
-    color: white;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 2px solid black;
-    padding: 5px;
-    text-transform: uppercase;
-    }
-    
-    
-    h1 {
-    color: #fff;
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 10%;
-    margin-inline-end: 10%;
-    font-weight: bold;
-    }
+var btn = document.querySelector(".no");
+var position
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    btn.addEventListener("touchstart", function() {
+        position ? (position = 0) : (position = 150);
+        btn.style.transform = `translate(${position}px,0px)`;
+        btn.style.transition = "all 0.3s ease";
+      });
+      
+      btn.addEventListener("touchend", function() {
+        position ? (position = 0) : (position = 150);
+        btn.style.transform = `translate(${position}px,0px)`;
+        btn.style.transition = "all 0.3s ease";
+      });
+  } else {
+    btn.addEventListener("mouseover", function() {
+        position ? (position = 0) : (position = 150);
+        btn.style.transform = `translate(${position}px,0px)`;
+        btn.style.transition = "all 0.3s ease";
+        });
+  }
+
+function tanks() {
+alert("Eu também te amo e aceito casar com vc! :)")
+}  
+
+function not() {
+alert("Você nem ta maluca de não aceitar, volte lá e clique no sim! :/")
+} 

@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(243, 151, 243);
+    color: white;
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button{
+    background-color: red;
+    color: white;
+    width: 100px;
+    position: absolute;
+}
+
+.hidden{
+    display: none;
+}
+
+#move{
+    left: 200px;
+}
+
+#change{
+    cursor: pointer;
+}
